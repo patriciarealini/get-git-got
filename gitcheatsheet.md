@@ -10,13 +10,16 @@ An easy to navigate reference for all your Command Line needs!
 | `cd`				|	change directory 							|
 | `cd ..` 			| 	go back one directory 						|
 | `cd - `			| 	go back to previous working directory 		|
-| `ls`				|	list (files in directory) 					|
+| `ls`/`dir`		|	list (files in directory) (mac/windows)		|
+| `rm`				| 	remove file 								|
+| `rmdir`			|	remove directory							|
 | Tab				|	completing arguments 						|
 | CTRL-P/CMMD-P		|	recalls the previous command  (up arrow) 	|
 | CTRL-R/CMMD-R 	|	search command history 						|
 | CTRL-W/CMMD-W 	|	deletes the last word						|
 | CTRL-U/CMMD-U 	|	deletes the whole line 						|
 | CTRL-L/CMMD-L		|	clear screen 								|
+| `q`				|	quits any help or manual printing & starts a new command prompt	|
 
 ##Git
 
@@ -30,6 +33,7 @@ An easy to navigate reference for all your Command Line needs!
 | `git add filename.filetype`	| adds a file to the staging area				|
 | `git add --all`				| adds all files that are tracked & untracked to the staging area 	|
 | `git add -A`					| same as `git add --all`						|
+| `git add -p`					| adds the file & displays all the changes made to the file since the last commit. Changes must be approved for the staging in hunks.						|
 | `git add '*.filetype'`		| adds all files of the filetype specified to the staging area (* = wildcard)	|
 | `git commit -m "message"`		| commits staged files to the repo				|
 | `git commit -a -m "message"`	| add changes from all tracked files in one line/step (doesn't add new untracked files)	|
@@ -39,9 +43,11 @@ An easy to navigate reference for all your Command Line needs!
 | `git remote -v`				| show remote repos 							|
 | `git clone url.git`			| Clone a repo onto your computer, have your own working directory		|
 | `git remote add origin https://github.com/username/reponame.git`		| stages a local repo to github server. (needs a name & url from github) No commit necessary for this staging.	|
+| `git remote add upstream url.git`	| add a remote source for your forked repo. This allows you to `git pull upstream master` in order to sync with changes made to the original repo.		|
 | `git push origin master`		| push tells github which repo to put the commits in (in this case the master branch)	|
 | `git push -u origin master` 	| `-u` will make git remember the parameters you entered so that next time you can just type in `git push`.	|
-| `git pull origin master`		| update your working directory to match the changes in the GitHub repo	|
+| `git pull origin master`		| update your working directory to match the changes in the GitHub repo listed under origin. You can pull from any branch, just replace `master` with the branch you want to pull from.	|
+| `git pull upstream master`	| update your working direcotry to match the changes in the GitHub repo that you have forked from (repo listed in `git remote -v` as upstream). You can pull from any branch off the forked repo, just replace `master` with the branch you want to pull from. 	|
 | `git pull --all`				| pull all the changes on all the remote branches 						|
 | `git diff`					| check what's different from your last commit	|
 | `git diff HEAD`				| diff of your most recent commit	|
