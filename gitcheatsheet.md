@@ -90,6 +90,7 @@ An easy to navigate reference for all your Command Line needs!
 * [Git Dev Docs](http://devdocs.io/git/git)
 * [Git Cheat Sheet](http://overapi.com/git/)
 * [How to Undo in Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+* [How to Squash Commits In A GitHub Pull Request](http://blog.steveklabnik.com/posts/2012-11-08-how-to-squash-commits-in-a-github-pull-request)
 
 
 
